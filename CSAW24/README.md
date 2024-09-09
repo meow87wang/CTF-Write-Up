@@ -1,4 +1,4 @@
-# CSAW'24
+# CSAW'24 Write UP
 
 | Place    | Score |
 | -------- | ----- |
