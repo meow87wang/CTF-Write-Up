@@ -57,7 +57,7 @@ csawctf{1_n0w_und3r5t4nd_435_d1ffu510n}
 
 CBC padding oracle attack.
 
-There are 2400 bytes to decrypt, and the flag is not located at head or tail.
+There are 2400 bytes to decrypt, and the flag is not located at head neither tail.
 So you need some time to get the flag.
 
 ```
