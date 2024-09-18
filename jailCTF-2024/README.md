@@ -2,6 +2,12 @@
 
 https://ctf.pyjail.club/
 
+| Place    | Score |
+| -------- | ----- |
+| 64/715 | 951  |
+
+Very interesting CTF, focusing on jailbreaking techniques.
+
 ## blind-calc
 
 The source code probably looks like this
