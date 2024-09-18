@@ -1,5 +1,7 @@
 # jailCTF 2024
 
+https://ctf.pyjail.club/
+
 ## blind-calc
 
 The source code probably looks like this
