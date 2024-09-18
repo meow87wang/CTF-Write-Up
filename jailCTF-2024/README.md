@@ -93,4 +93,9 @@ Luckily, methods `instance_eval` accept two arguement, the payload is
 ```
 Kernel.system("sh") instance_eval 1
 ```
+<details>
+  <summary>FLAG</summary>
+  <tt>jail{me_when_i_uhhh_escape}</tt>
+</details>
+
 
