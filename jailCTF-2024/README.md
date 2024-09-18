@@ -48,7 +48,7 @@ The input string's ascii value must be even, odd, even, odd,....
 
 Ultimately, we want to build `eval("eval(input()")`. Because the ascii value of "eval" is odd, even, odd, even.
 
-The table lists import elements we can use to build the exploitation.
+The table lists import elements we can use to build the payload.
 
 | char          | ord%2 |
 | ------------- | ----- |
@@ -81,3 +81,16 @@ After some painful process, I construct a string that can let us execute arbitra
 </details>
 
 ## SUS-Calculator
+
+The user input can control which instance method to use, however, the arguments must be accept by the method.
+The payload format will loog like
+```
+<argument 1> <instance method> <argument 2>
+```
+
+Luckily, methods `instance_eval` accept two arguement, the payload is 
+
+```
+Kernel.system("sh") instance_eval 1
+```
+
