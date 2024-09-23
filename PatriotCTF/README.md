@@ -1,4 +1,4 @@
-# PatriotCTF
+# PatriotCTF Writeup
 
 https://pctf.competitivecyber.club/
 
