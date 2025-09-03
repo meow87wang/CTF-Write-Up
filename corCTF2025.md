@@ -33,10 +33,9 @@ After enough rounds, there will be only one candidate left for each position.
 ### Code to solve the challenge
 ```python3
 from pwn import *
-N = 112//2
+N = 112//2 # Got the length of the flag in advance.
 flag = 'corctf{'
 
-#while flag[-1] != '}':
 client = remote('ctfi.ng', 31556)
 client.recv()
 test = 1000
@@ -54,11 +53,15 @@ for i in range(test):
     for j in range(len(flag)):
         used.append(ord(flag[j]) ^ res[j])    
     assert len(set(used)) == len(flag)
+
+    # Add 1 to valid candidates of each position
     for k in range(len(flag), N):
         for j in range(256):
             if j in used:
                 continue
             count[k][j ^ res[k]] += 1
+
+# The actual plaintext must been added every round.
 for k in range(len(flag), N):
     for j in range(256):
         if count[k][j] == test:
