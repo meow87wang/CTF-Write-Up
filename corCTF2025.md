@@ -13,7 +13,7 @@ Let the flag length be $N$.
 
 In every round, the challenge choose $N$ numbers from `[0,255]`, shuffle them as the key stream, and then xor it with the flag.
 
-For example, it can choose [1,255,3,7] to xor with a flag whose length is 4, but can neither choose `[1,1,240,241]` (repeated `1`) nor `[0,1,2,256]` (out of range).
+For example, it can choose `[1,255,3,7]` to xor with a flag whose length is 4, but can neither choose `[1,1,240,241]` (repeated `1`) nor `[0,1,2,256]` (out of range).
 
 ### Approach
 Because we know the format of the flag, which is `corctf{...}`, we can know the first 7 numbers of key stream.
