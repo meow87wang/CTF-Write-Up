@@ -42,7 +42,7 @@ The process will work like:
 
 ### Code
 
-```python=
+```python
 import requests
 import base64
 from Crypto.Util.number import bytes_to_long
@@ -100,7 +100,7 @@ Didn't keep it.
 The challange provides a decryption oracle.
 A part of code is also provided:
 
-```python=
+```python
 import time
 import hmac
 from Crypto.Cipher import AES
@@ -169,7 +169,7 @@ Nowing the padding result allows us to perform [cbc padding oracle attack](https
 
 ### Code
 
-```python=
+```python
 from pwn import *
 from Crypto.Util.number import long_to_bytes
 import os
@@ -228,7 +228,7 @@ known_ans = ['','',''] # sometimes get outliers, this make it more easy to redo
 print(attack.solve(ct, charset, known_ans))
 ```
 
-```python=
+```python
 import random
 from Crypto.Cipher import AES 
 from Crypto.Util.Padding import pad, unpad
