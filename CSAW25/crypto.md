@@ -4,7 +4,7 @@
 
 ### Description
 
-The challange provides a website.
+The challenge provides a website.
 All text in the website is encrypted with ROT47 with `key=7`.
 By reading the website's content, we can know that it is a encryption oracle, but the encryption(?) scheme is a black box.
 
@@ -97,7 +97,7 @@ Didn't keep it.
 
 ### Description
 
-The challange provides a decryption oracle.
+The challenge provides a decryption oracle.
 A part of code is also provided:
 
 ```python
