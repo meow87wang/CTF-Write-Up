@@ -1,4 +1,4 @@
-# lactf 2026
+# lactf 2026 Crypto writeup
 
 ## six seven again
 
