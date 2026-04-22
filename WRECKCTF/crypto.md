@@ -86,6 +86,10 @@ flag = xor(xor(ct_bulletin_bytes, ct_flag_bytes), bulletin)
 print(flag.decode())
 
 ```
+<details>
+  <summary>Click to reveal flag</summary>
+  wreck{tw0_t1m3_p4d_m1st4k3s_n3v3r_g0_0ut_0f_styl3}
+</details>
 
 ## crypto/Bounding
 
@@ -195,7 +199,11 @@ print(m.to_bytes('big').strip(b'\x00'))
 
 ```
 
-Flag: ||`wreck{b0und_4nd_r3b0und_th3_w1ld_r00_h0ps_h0m3}`||
+<details>
+  <summary>Click to reveal flag</summary>
+  wreck{b0und_4nd_r3b0und_th3_w1ld_r00_h0ps_h0m3}
+</details>
+
 
 ## crypto/No Hash No Cash
 
@@ -338,7 +346,10 @@ client.sendline(str(s).encode())
 client.interactive()
 ```
 
-Flag: ||`wreck{dont_let_the_attacker_choose_the_challenge}`||
+<details>
+  <summary>Click to reveal flag</summary>
+    wreck{dont_let_the_attacker_choose_the_challenge}
+</details>
 
 ## crypto/skissue
 
@@ -404,5 +415,9 @@ print(bytes.fromhex(hex(m)[2:]).decode())
 
 ```
 
-Flag: ||`wreck{n0_sk1ll_1ssu3}`||
+<details>
+  <summary>Click to reveal flag</summary>
+    wreck{n0_sk1ll_1ssu3}
+</details>
+
 
