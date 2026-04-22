@@ -5,7 +5,7 @@
 ### Challenge
 
 `gen.py`
-```python!
+```python
 """
 Bob runs a little 'secure' broadcast.  Each week he posts a public safety
 bulletin and, separately, drops a private note to his friends -- both
@@ -60,7 +60,7 @@ $ct_{flag} = pt_{flag} \oplus keystram$
 $keystram = pt_{bulletin} \oplus ct_{bulletin}$
 
 `solve.py`
-```python!
+```python
 from Crypto.Util.number import long_to_bytes
 
 bulletin = (
@@ -91,7 +91,7 @@ print(flag.decode())
 
 ### Challenge
 
-```python!
+```python
 """
 Out on the red-dirt plains of Z_p*, an old bushman keeps two kangaroos.
 
@@ -176,7 +176,7 @@ Fortunately, discrete log with bound $2^{44}$ can be computed efficiently. Sagem
 `hops = discrete_log(silhouette, g, bounds=(0, MAX_HOPS))`
 
 solve.sage
-```python!
+```python
 p = 166098514875595764654541504640396591045468899662086332329175858383529503832832841710504024371237723420984885135954468730357502745199674429893400929639866980448275459565414944974923657748962593798140937580687043237764380152923499409513037496572226986942036496113991128163914176355316399962782354947855034472339
 g = 37428300087103233903345371968292747702308747851415083574680390249302279741003976715244778367655841934093781896953734487855356267068901703246648246503033574114259220509587198842809075756035977158021110654827184972478685429451268076768422447246174197462323642755391799873569801477331388504105427505206806670818
 MAX_HOPS = 17592186044416
@@ -202,7 +202,7 @@ Flag: ||`wreck{b0und_4nd_r3b0und_th3_w1ld_r00_h0ps_h0m3}`||
 ### Challenge
 
 `chall.py`
-```python!
+```python
 #!/usr/local/bin/python3
 
 from pathlib import Path
@@ -286,7 +286,7 @@ As a result, we can have full control on verification.
 ### 
 
 `solve.py`
-```python!
+```python
 from pwn import *
 import subprocess
 from random import randint
@@ -336,16 +336,16 @@ client.recvuntil(b"s = ")
 client.sendline(str(s).encode())
 
 client.interactive()
-
-
 ```
+
+Flag: ||`wreck{dont_let_the_attacker_choose_the_challenge}`||
 
 ## crypto/skissue
 
 ### Challenge
 
 `gen.py`
-```python!
+```python
 from Crypto.Util.number import getPrime, bytes_to_long
 
 bits = 1024
